@@ -6,9 +6,6 @@
 }
 
 .blog-post-title{
-    font-family: "Courier New", sans-serif;
-    font-variant-caps: all-petite-caps;
-    font-size:2.5em;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -23,14 +20,15 @@
 .blog-post-date {
     margin-top: 2px;
     margin-bottom: 2px;
-    margin-right: 10px;
-    font-size: 1em;
+    margin-right: 0px;
     color: grey;
 }
 
 .blog-post{
-    width: 600px;
+
 }
+
+
 
 .blog-post-card-content{
     padding-left: 12px;
