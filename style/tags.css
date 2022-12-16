@@ -1,0 +1,35 @@
+.tag {
+    border-radius: 15px; /* Add some roundness */
+    padding: 5px 5px;
+    display: inline;
+    min-width: 50px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+}
+
+.music {
+    background-color: coral;
+}
+
+.music:before {
+    content: "music";
+}
+
+
+.tech {
+    background-color: deepskyblue;
+}
+
+.tech:before {
+    content: "tech";
+}
+
+.nature {
+    background-color: limegreen;
+}
+
+.nature:before {
+    content: "nature";
+}

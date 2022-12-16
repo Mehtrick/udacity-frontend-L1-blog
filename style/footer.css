@@ -1,0 +1,28 @@
+.footer{
+    margin-top: 20px;
+    border-top: solid grey;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-note{
+    font-size: 1.2em;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #01223b;
+    color: white;
+}
+
+

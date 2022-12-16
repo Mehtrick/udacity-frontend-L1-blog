@@ -1,0 +1,72 @@
+.blog-post-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.blog-post-title{
+    font-family: "Courier New", sans-serif;
+    font-variant-caps: all-petite-caps;
+    font-size:2.5em;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.blog-post-meta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.blog-post-date {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 10px;
+    font-size: 1em;
+    color: grey;
+}
+
+.blog-post{
+    width: 600px;
+}
+
+.blog-post-card-content{
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 5px;
+}
+
+
+.blog-post-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.blog-post-read-more-button{
+    border-radius: 8px;
+    background-color: dodgerblue;
+    border: 1px solid;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.blog-post-read-more-button:before{
+    content: "Read more";
+}
+
+.blog-post-read-more-button:hover{
+    opacity: 0.8;
+}
+
+.blog-post-image{
+    border-radius: 5px;
+    width: 100%
+}

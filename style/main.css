@@ -1,0 +1,39 @@
+@import "footer.css";
+@import "header.css";
+@import "blog-post-card.css";
+@import "tags.css";
+
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: white;
+    margin: 10px;
+}
+
+
+body {
+    font-family: Arial, serif;
+    padding: 10px;
+    background: #E5F3F3FF;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.fa {
+    padding: 10px;
+    font-size: 46px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+
+
