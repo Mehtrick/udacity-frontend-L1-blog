@@ -1,0 +1,13 @@
+.header {
+    font-size: 1.2em;
+    grid-area: hd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-family: "Optima", serif;
+    font-variant: all-small-caps;
+    background-color: #3A405A;
+    color: white;
+    margin-bottom: 10px;
+}

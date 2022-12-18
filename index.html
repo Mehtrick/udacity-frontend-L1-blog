@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="EN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>
-        Mobp - My own blogging plattform
-    </title>
-    <link href="style/main.css" rel="stylesheet">
+    <title>My blogging plattform</title>
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/blog-posts-container.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
 </head>
-<body>
-<header>
-    <h1 class="blog-title">Mobp - My own blogging plattform</h1>
+<body class="container">
+<header class="header">
+    <h1>Blog.info()</h1>
 </header>
-<div class="blog-post-container">
-    <article class="card blog-post">
+<nav class="navbar">
+    <a class="nav-item" href="#">Latest Post</a>
+    <a class="nav-item" href="#">Subscribe</a>
+</nav>
+<div class="blogpost-container">
+    <article class="card blog-post-card">
         <img alt="New Piano" class="blog-post-image" src="images/blog-post-1.jpg">
         <section class="blog-post-card-content">
             <h2 class="blog-post-title">A new piano</h2>
-            <section class="blog-post-meta">
-                <h3 class="blog-post-date">15.12.2022</h3>
-                <span class="tag music"></span>
-            </section>
+            <h3 class="blog-post-date">15.12.2022</h3>
+            <span class="tag music"></span>
             <p class="blog-post-summary">
                 It has been a long time since I played piano. Well... technically it isn't a real piano here.
             </p>
@@ -33,10 +35,8 @@
         <img alt="New Piano" class="blog-post-image" src="images/blog-post-2.jpg">
         <section class="blog-post-card-content">
             <h2 class="blog-post-title">Living with the "wolf"</h2>
-            <section class="blog-post-meta">
-                <h3 class="blog-post-date">12.12.2022</h3>
-                <span class="tag nature"></span>
-            </section>
+            <h3 class="blog-post-date">12.12.2022</h3>
+            <span class="tag nature"></span>
             <p class="blog-post-summary">Winter isn't coming. Winter is here. The dog loves this freezing cold weather. Even if the sea isn't great for swimming at this time of the
                 year.</p>
             <footer class="blog-post-footer">
@@ -48,10 +48,8 @@
         <img alt="Keyboard" class="blog-post-image" src="images/blog-post-3.jpg">
         <section class="blog-post-card-content">
             <h2 class="blog-post-title">Honor the unicorns</h2>
-            <section class="blog-post-meta">
-                <h3 class="blog-post-date">10.12.2022</h3>
-                <span class="tag tech"></span>
-            </section>
+            <h3 class="blog-post-date">10.12.2022</h3>
+            <span class="tag tech"></span>
             <p class="blog-post-summary">Been a long time since I got a new keyboard. This one turned out more colorful than I expected.</p>
             <footer class="blog-post-footer">
                 <a class="blog-post-read-more-button" href="#"></a>
@@ -60,13 +58,15 @@
     </article>
 </div>
 <footer class="footer">
+    <p class="footer-note">© 2022 - build for udacity</p>
     <p class="footer-note">You may stalk me here</p>
+
     <div class="socialmedia">
         <a class="fa fa-facebook" href="https://facebook.com"></a>
         <a class="fa fa-twitter" href="https://twitter.com"></a>
         <a class="fa fa-linkedin" href="https://linkedin.com"></a>
     </div>
 </footer>
-</body>
 
+</body>
 </html>

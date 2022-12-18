@@ -1,0 +1,11 @@
+@import "social-media.css";
+
+.footer {
+    background-color: #eeeeee;
+    grid-area: ft;
+    border-top: solid #5E565A;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

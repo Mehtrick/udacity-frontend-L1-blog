@@ -10,7 +10,7 @@
 }
 
 .music {
-    background-color: coral;
+    background-color: #FF6B6B;
 }
 
 .music:before {
@@ -19,7 +19,7 @@
 
 
 .tech {
-    background-color: deepskyblue;
+    background-color: #3E8989;
 }
 
 .tech:before {
@@ -27,7 +27,7 @@
 }
 
 .nature {
-    background-color: limegreen;
+    background-color: #EF9A5A;
 }
 
 .nature:before {

@@ -1,0 +1,53 @@
+@import "header.css";
+@import "nav.css";
+@import "footer.css";
+
+body {
+    color: #262f38;
+    font-family: "native font stack", sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 70px 30px auto 1fr;
+    margin: auto;
+    grid-gap: 5px;
+    grid-template-areas:
+    "hd"
+    "nav"
+    "main"
+    "ft";
+}
+
+.card {
+    border-radius: 5px;
+    border: 1px solid #5E565A;
+    background-color: white;
+    margin: 5px 10px 20px;
+}
+
+@media only screen and (min-width: 900px) {
+
+    .container {
+        display: grid;
+        grid-template-rows: 100px auto 1fr;
+        grid-template-columns: repeat(6, 1fr);
+        margin: auto;
+        align-items: start;
+        grid-gap: 5px;
+        grid-template-areas:
+    "hd hd hd hd hd hd "
+    ". . main main . nav"
+    "ft ft ft ft ft ft";
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        align-items: stretch;
+    }
+
+
+}
+

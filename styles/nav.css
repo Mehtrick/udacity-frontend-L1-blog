@@ -1,0 +1,25 @@
+.navbar {
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {
+    margin: 5px;
+    padding: 5px;
+    border: solid 1px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    color: #262f38;
+    font-size: 1.2em;
+    font-variant: all-small-caps;
+}
+
+.nav-item:hover {
+    background-color: #3A405A;
+    color: white;
+}

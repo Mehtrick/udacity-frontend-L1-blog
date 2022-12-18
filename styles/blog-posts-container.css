@@ -1,0 +1,78 @@
+@import "tags.css";
+
+.blogpost-container {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-post-card {
+    padding: 0;
+}
+
+.blog-post-card-content {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd tag"
+    "dt dt dt dt dt dt dt dt"
+    "ct ct ct ct ct ct ct ct"
+    "btn btn btn btn btn btn btn btn";
+}
+
+.blog-post-footer {
+    grid-area: btn;
+    display: block;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.blog-post-title {
+    grid-area: hd;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.blog-post-date {
+    grid-area: dt;
+    color: dimgrey;
+    font-size: 0.9em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.tag {
+    grid-area: tag;
+}
+
+.blog-post-summary {
+    grid-area: ct;
+    font-size: 1.1em;
+}
+
+.blog-post-read-more-button {
+    border-radius: 8px;
+    background-color: #3A405A;
+    color: white;
+    padding: 8px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.blog-post-read-more-button:before {
+    content: "Read more";
+}
+
+.blog-post-read-more-button:hover {
+    opacity: 0.8;
+}
+
+.blog-post-image {
+    border-radius: 5px;
+    width: 100%
+}
