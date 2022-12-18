@@ -2,7 +2,7 @@
 .footer {
     background-color: #eeeeee;
     grid-area: ft;
-    border-top: solid #5E565A;
+    border-top: solid #5e565a;
     padding: 10px;
     display: flex;
     flex-direction: column;
