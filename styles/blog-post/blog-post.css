@@ -58,8 +58,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2px;
     color: #262f38;
+}
+
+.blog-post-subtitle h4 {
+    margin: 4px;
 }
 
 .blog-post-title {
