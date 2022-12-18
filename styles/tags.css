@@ -18,12 +18,12 @@
 }
 
 
-.tech {
+.food {
     background-color: #3E8989;
 }
 
-.tech:before {
-    content: "tech";
+.food:before {
+    content: "food";
 }
 
 .nature {
@@ -31,6 +31,6 @@
 }
 
 .nature:before {
-    content: "nature";
+    content: "food";
 }
 

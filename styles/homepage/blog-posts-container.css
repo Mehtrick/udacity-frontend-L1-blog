@@ -91,7 +91,7 @@ and (min-width: 1201px) {
     }
 
     .blog-post-card-footer {
-        display: flex !important;
+        display: flex;
         flex-direction: row;
         justify-content: end;
     }
