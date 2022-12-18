@@ -1,0 +1,115 @@
+@import "../social-media.css";
+@import "../tags.css";
+
+.blog-post-container {
+    grid-area: main;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    align-items: center;
+    justify-content: center;
+    grid-template-areas:
+        "ct"
+        "aut";
+}
+
+.author-image {
+    background-image: url("../../images/author.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5)
+}
+
+.blog-post-content {
+    grid-area: ct;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.blog-post-author {
+    grid-area: aut;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: #ECECECFF;
+}
+
+.blog-post-image {
+    display: block;
+    margin: auto;
+    width: 100%;
+}
+
+.author-info {
+    max-width: 60%;
+}
+
+.blog-post-subtitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+    color: #262f38;
+}
+
+.blog-post-title {
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1200px) {
+    .author-image {
+        width: 130px;
+        height: 130px;
+    }
+
+    .blog-post-card {
+        max-width: 600px;
+    }
+
+    .blog-post-image {
+        width: 80%;
+    }
+}
+
+@media only screen
+and (min-width: 1201px) {
+
+    .blog-post-container {
+        grid-area: main;
+        display: grid;
+        grid-template-rows: none;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+        " . ct ct ct aut";
+        align-items: start;
+        justify-content: center;
+    }
+
+    .blog-post-card {
+        max-width: 800px;
+    }
+
+    .blog-post-card-footer {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+
+    .blog-post-author {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .author-info {
+        max-width: 100%;
+        text-align: center;
+    }
+}

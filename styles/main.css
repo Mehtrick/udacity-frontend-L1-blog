@@ -7,6 +7,14 @@ body {
     font-family: "native font stack", sans-serif;
 }
 
+.card {
+    padding: 0;
+    border-radius: 5px;
+    border: 1px solid #5E565A;
+    background-color: white;
+    margin: 5px 10px 20px;
+}
+
 .container {
     display: grid;
     grid-template-rows: 70px 30px auto 1fr;
@@ -22,19 +30,12 @@ body {
 /**Tablet**/
 @media only screen and (min-width: 820px) and (max-width: 1200px) {
 
-    .container {
-        grid-template-columns: repeat(6, 1fr);
-        display: grid;
-        grid-template-rows: 100px auto 1fr;
-        margin: auto;
-        align-items: start;
-        grid-gap: 5px;
-        grid-template-areas:
-    "hd hd hd hd hd hd "
-    "nav nav nav nav nav nav"
-    ". main main main main . "
-    "ft ft ft ft ft ft";
+    .blog-post-card-footer {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: end;
     }
+
 }
 
 /**Desktop**/
@@ -42,22 +43,23 @@ body {
 and (min-width: 1200px) {
     .container {
         display: grid;
-        grid-template-rows: 100px auto 1fr;
+        grid-template-rows: 100px auto auto 1fr;
         grid-template-columns: repeat(8, 1fr);
         margin: auto;
         align-items: start;
         grid-gap: 5px;
         grid-template-areas:
     "hd hd hd hd hd hd hd hd "
-    ". . .  main main nav . . "
+    "nav nav nav nav nav nav nav nav"
+    ". main main main main main main . "
     "ft ft ft ft ft ft ft ft";
     }
 
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        margin-right: 10px;
-        align-items: stretch;
+    .blog-post-card-footer {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: end;
     }
+
 }
 
