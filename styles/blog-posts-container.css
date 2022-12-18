@@ -1,6 +1,6 @@
 @import "tags.css";
 
-.blogpost-container {
+.blog-posts-container {
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -9,6 +9,10 @@
 
 .blog-post-card {
     padding: 0;
+    border-radius: 5px;
+    border: 1px solid #5E565A;
+    background-color: white;
+    margin: 5px 10px 20px;
 }
 
 .blog-post-card-content {
@@ -20,23 +24,23 @@
     "hd hd hd hd hd hd hd tag"
     "dt dt dt dt dt dt dt dt"
     "ct ct ct ct ct ct ct ct"
-    "btn btn btn btn btn btn btn btn";
+    "ft ft ft ft ft ft ft ft";
 }
 
-.blog-post-footer {
-    grid-area: btn;
+.blog-post-card-footer {
+    grid-area: ft;
     display: block;
     flex-direction: row;
     justify-content: end;
 }
 
-.blog-post-title {
+.blog-post-card-title {
     grid-area: hd;
     margin-bottom: 2px;
     margin-top: 2px;
 }
 
-.blog-post-date {
+.blog-post-card-date {
     grid-area: dt;
     color: dimgrey;
     font-size: 0.9em;
@@ -44,11 +48,11 @@
     margin-bottom: 0;
 }
 
-.tag {
+.blog-post-card-tag {
     grid-area: tag;
 }
 
-.blog-post-summary {
+.blog-post-card-summary {
     grid-area: ct;
     font-size: 1.1em;
 }
