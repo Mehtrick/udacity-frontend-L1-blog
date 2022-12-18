@@ -25,7 +25,11 @@
 .blog-post-content {
     grid-area: ct;
     padding: 5px;
-    margin-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+    margin: auto;
 }
 
 .blog-post-author {

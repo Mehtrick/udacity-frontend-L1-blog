@@ -2,6 +2,11 @@
 @import "nav.css";
 @import "footer.css";
 
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     color: #262f38;
     font-family: "native font stack", sans-serif;
@@ -16,10 +21,12 @@ body {
 }
 
 .container {
+    min-height: 100%;
     display: grid;
-    grid-template-rows: 70px 30px auto 1fr;
-    margin: auto;
+    grid-template-rows: auto auto 1fr auto;
+    grid-template-columns: 100%;
     grid-gap: 5px;
+    margin: auto;
     grid-template-areas:
     "hd"
     "nav"
@@ -66,17 +73,10 @@ input {
 @media only screen
 and (min-width: 1200px) {
     .container {
+        min-height: 100%;
         display: grid;
-        grid-template-rows: 100px auto auto 1fr;
-        grid-template-columns: repeat(8, 1fr);
-        margin: auto;
-        align-items: start;
-        grid-gap: 5px;
-        grid-template-areas:
-    "hd hd hd hd hd hd hd hd "
-    "nav nav nav nav nav nav nav nav"
-    ". main main main main main main . "
-    "ft ft ft ft ft ft ft ft";
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-columns: 100%;
     }
 
     .blog-post-card-footer {
